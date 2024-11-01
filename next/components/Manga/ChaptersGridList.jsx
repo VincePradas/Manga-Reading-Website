@@ -10,7 +10,7 @@ const ChapterGridList = ({ chapterList, id, ch }) => {
             {chapterList.map((val) => (
                 <Link
                     href={`/manga/${id}/${val.id}`}
-                    className={` text-white rounded hover:bg-red-400 ease-in-out duration-500 p-3 ${ch === val.id ? "bg-red-400" : "bg-base-300"}`}>
+                    className={` text-white rounded hover:bg-purple-500 ease-in-out duration-500 p-3 ${ch === val.id ? "bg-purple-500" : "bg-base-300"}`}>
                     {val.name}
                 </Link>
             ))}

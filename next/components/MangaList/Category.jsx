@@ -45,8 +45,8 @@ const Category = () => {
                 <Tabs
                     onSelectionChange={(e) => handleRedirect("category", e)}
                     classNames={{
-                        cursor: "w-full bg-red-400",
-                        tabContent: "group-data-[selected=true]:text-white text-red-400"
+                        cursor: "w-full bg-purple-500",
+                        tabContent: "group-data-[selected=true]:text-white text-purple-500"
                     }} variant="light" items={metaData.category} aria-label="Options">
                     {metaData.category.map((val) => (
                         <Tab key={val.id} title={val.name} />
@@ -57,7 +57,7 @@ const Category = () => {
                 <DropdownTrigger>
                     <Button
                         variant="bordered"
-                        className="capitalize bg-base-300 border-red-400 text-white"
+                        className="capitalize bg-base-300 border-purple-500 text-white"
                     >{searchParamsStates.type ? searchParamsStates.type : metaData.type[0].name}
                     </Button>
                 </DropdownTrigger>
@@ -65,7 +65,7 @@ const Category = () => {
                     onAction={(e) => handleRedirect("type", e)}
                 >
                     {metaData.type.map((val, index) => (
-                        <DropdownItem className={`text-white ${(val.id === searchParamsStates.type || (!searchParamsStates.type && index === 0)) && "bg-red-400/40"}`} key={val.id}>{val.name}</DropdownItem>
+                        <DropdownItem className={`text-white ${(val.id === searchParamsStates.type || (!searchParamsStates.type && index === 0)) && "bg-purple-500/40"}`} key={val.id}>{val.name}</DropdownItem>
                     ))}
                 </DropdownMenu>
             </Dropdown>
@@ -73,7 +73,7 @@ const Category = () => {
                 <DropdownTrigger>
                     <Button
                         variant="bordered"
-                        className="capitalize bg-base-300 border-red-400 text-white"
+                        className="capitalize bg-base-300 border-purple-500 text-white"
                     >{searchParamsStates.state ? searchParamsStates.state : metaData.state[0].name}
                     </Button>
                 </DropdownTrigger>
@@ -81,7 +81,7 @@ const Category = () => {
                     onAction={(e) => handleRedirect("state", e)}
                 >
                     {metaData.state.map((val, index) => (
-                        <DropdownItem className={`text-white ${(val.id === searchParamsStates.state || (!searchParamsStates.state && index === 0)) && "bg-red-400/40"}`} key={val.id}>{val.name}</DropdownItem>
+                        <DropdownItem className={`text-white ${(val.id === searchParamsStates.state || (!searchParamsStates.state && index === 0)) && "bg-purple-500/40"}`} key={val.id}>{val.name}</DropdownItem>
                     ))}
                 </DropdownMenu>
             </Dropdown>

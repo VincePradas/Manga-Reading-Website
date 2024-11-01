@@ -46,7 +46,7 @@ const List = ({ dataList, metaData }) => {
                     <Pagination total={totalMangaPages} variant="light" classNames={{
                         item: "w-8 h-8 text-small bg-transparent text-white hover:text-black",
                         cursor:
-                            "w-8 h-8 text-small bg-red-400",
+                            "w-8 h-8 text-small bg-purple-500",
                     }} onChange={(e) => handleRedirect("page", e)} />
                 </div>
             </div>

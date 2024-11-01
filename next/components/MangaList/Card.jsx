@@ -6,7 +6,7 @@ const CardUi = ({ val, index }) => {
 
   return (
     <Link prefetch={false} href={"manga/" + val.id} className="h-full">
-      <Card className="pb-4 bg-base-300 border border-red-400 h-full">
+      <Card className="pb-4 bg-base-300 h-full">
         <CardBody className="  p-1.5">
           <div className="overflow-hidden w-full h-60 bg-base-200 rounded-lg">
             <Image
@@ -24,10 +24,10 @@ const CardUi = ({ val, index }) => {
           </h1>
           {val.description && <> <p className="text-white text-sm opacity-75">{truncateString(val.description, 60)}</p>
           <div className="flex items-center mt-1 gap-2">
-            <span className="my-0.5 text-white flex flex-row px-1 py-0.5 bg-red-400 w-max gap-1 h-max items-center justify-center  ">
+            <span className="my-0.5 text-white flex flex-row px-1 py-0.5 bg-purple-500 rounded-md w-max gap-1 h-max items-center justify-center  ">
               <GiEyeball />{val.view}
             </span>
-            <p className="text-sm text-red-400 mp-1 font-light">{val.chapter}</p>
+            <p className="text-sm text-purple-500 mp-1 font-light">{val.chapter}</p>
           </div> </>}
         </CardHeader>
       </Card>

@@ -14,7 +14,7 @@ const ScalableArea = ({ children }) => {
             <div className="w-full sticky bottom-0">
                 <input 
                     type="range" 
-                    max={400} 
+                    max={500} 
                     min={-700} 
                     value={marge} 
                     onChange={(e)=>setMarge(e.target.value)} 

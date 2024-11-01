@@ -9,7 +9,7 @@ const PagesGridList = ({ chapterList, id, ch }) => {
                 {chapterList.chapterListIds.reverse().map((val) => (
                     <Link
                         href={`/manga/${id}/${val.id}`}
-                        className={` text-white rounded hover:bg-red-400 ease-in-out duration-500 p-3 ${ch === val.id ? "bg-red-400" : "bg-base-300"} whitespace-nowrap w-max`}>
+                        className={` text-white rounded hover:bg-purple-500 ease-in-out duration-500 p-3 ${ch === val.id ? "bg-purple-500" : "bg-base-300"} whitespace-nowrap w-max`}>
                         {val.name}
                     </Link>
                 ))}

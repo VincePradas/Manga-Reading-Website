@@ -20,7 +20,7 @@ body {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 100px;
-  @apply bg-red-400/50 hover:bg-red-400 ease-in-out duration-200
+  @apply bg-purple-400/50 hover:bg-purple-400 ease-in-out duration-200
 }
 
 .firebase-emulator-warning{

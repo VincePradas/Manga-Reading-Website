@@ -9,8 +9,8 @@ const NavbarComponent = ({ children }) => {
     return (
         <Navbar maxWidth="full" className="bg-base-300 flex-1 sticky p-3 gap-3 shadow-xl">
             <div className="h-full w-max flex  items-center gap-2" >
-                <GiHook className="text-red-400" size={25} />
-                <Link href="/" className="font-bold text-inherit text-white">Manga Hook</Link>
+                <GiHook className="text-purple-500" size={25} />
+                <Link href="/" className="font-bold text-inherit text-white">Vinndex</Link>
             </div>
             <NavbarContent className="w-full " justify="end">
                 {children}
@@ -29,7 +29,7 @@ const SearchBox = () => {
 
     return (
         <>
-            <Button isIconOnly onPress={onOpen} className="bg-red-400 text-white">
+            <Button isIconOnly onPress={onOpen} className="bg-purple-500 text-white">
                 <BiSearch size={20} />
             </Button>
             <Modal isOpen={isOpen} onOpenChange={onOpenChange} isDismissable={false}>
@@ -37,7 +37,7 @@ const SearchBox = () => {
                     {(onClose) => (
                         <>
                             <ModalBody className="bg-base-300 p-4">
-                                <h1 className="font-semibold text-xl text-red-400">Search</h1>
+                                <h1 className="font-semibold text-xl text-purple-500">Search</h1>
                                 <div className="flex gap-2 items-center justify-center p-1 w-full">
                                     <input value={value} onChange={(e)=>setValue(e.target.value)} placeholder="tap something ..." className="input flex-1" />
                                     <button onClick={()=>{
